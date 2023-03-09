@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Página.css">
+    <link rel="icon" type="image/png" href="img/Logo pagina.png">
+    <title>TURBORACING Magazine</title>
+
+<style>
+    button {
+    margin-bottom: 30px;
+    background: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+button:hover {
+    transform: scale(1.06);
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        red, blue, deeppink, blue,
+        red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+       background-position: 0 0; 
+    }
+}
+</style>
+
+</head>
+<body>
+
+    <center>
+    <img src="img/imagen inicio.png" style="width: 350px; height: 200px; margin-bottom: 20px;" alt="">
+</center>
+
+<center>
+     <button>
+        <a href="frases.html" target="_blank" style="text-decoration: none; color: #fff;">FRASES</a>  
+     </button>
+     <button>
+        <a href="revistas.html" target="_blank" style="text-decoration: none; color: #fff;">REVISTAS</a>
+     </button>
+     <button>
+        <a href="eventos.html" target="_blank" style="text-decoration: none; color: #fff;">EVENTOS</a>
+     </button>
+</center>
+
+            <!--::::Pie de Pagina::::::-->
+            <footer class="pie-pagina">
+                <div class="grupo-1">
+                    <div class="box">
+                        <figure class="xd">
+                           <a href="#">
+                            <img src="img/Logo footer.png" style="width: 500px; height: 150px;" alt="">
+                           </a> 
+                        </figure>
+                    </div>
+                    <div class="box">
+                        <h2>SOBRE NOSOTROS</h2>
+                        <P>Conesa (2907), San Nicolás,</P>
+                        <p>Provincia de Buenos Aires, Argentina</p>
+                    </div>
+                    <div class="box">
+                    <h2>CONTÁCTANOS</h2>
+                    <div class="red-social" id="hola">
+    
+                    <a href="https://www.instagram.com/turboracing_magazine/" class="fa fa-instagram" target="_blank"><img src="img/Instagram-Logo-2016.png" alt=""></a>
+                    <a href="https://wa.me/542477532902" class="fa fa-whatsapp" target="_blank"><img src="img/WhatsApp.svg.png" alt=""></a>
+                    <a href="Contacto.php" class="fa fa-youtube" target="_blank"><img src="img/correo logo.png" alt=""></a>
+                    
+    
+                    </div>
+                    
+    
+                    </div>
+                </div>
+    
+                
+                </div>
+    
+                <div class="grupo-2">
+                    <small>&copy; 2023 <b>Diego Micheletti</b> - Todos los Derechos Reservados. </small>
+                </div>
+    
+            </footer>
+                 
+            
+      </p>
+</body>
+</html>
